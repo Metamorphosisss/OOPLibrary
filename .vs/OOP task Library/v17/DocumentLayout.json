@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\OOP task Library\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B06C2EE-4977-4200-9705-76E2D0D165A8}|OOP task Library\\OOP task Library.csproj|c:\\users\\asus\\source\\repos\\oop task library\\oop task library\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B06C2EE-4977-4200-9705-76E2D0D165A8}|OOP task Library\\OOP task Library.csproj|solutionrelative:oop task library\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B06C2EE-4977-4200-9705-76E2D0D165A8}|OOP task Library\\OOP task Library.csproj|c:\\users\\asus\\source\\repos\\oop task library\\oop task library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B06C2EE-4977-4200-9705-76E2D0D165A8}|OOP task Library\\OOP task Library.csproj|solutionrelative:oop task library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B06C2EE-4977-4200-9705-76E2D0D165A8}|OOP task Library\\OOP task Library.csproj|c:\\users\\asus\\source\\repos\\oop task library\\oop task library\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B06C2EE-4977-4200-9705-76E2D0D165A8}|OOP task Library\\OOP task Library.csproj|solutionrelative:oop task library\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Library.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\OOP task Library\\OOP task Library\\Library.cs",
+              "RelativeDocumentMoniker": "OOP task Library\\Library.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\OOP task Library\\OOP task Library\\Library.cs",
+              "RelativeToolTip": "OOP task Library\\Library.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T12:52:32.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\OOP task Library\\OOP task Library\\Book.cs",
+              "RelativeDocumentMoniker": "OOP task Library\\Book.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\OOP task Library\\OOP task Library\\Book.cs",
+              "RelativeToolTip": "OOP task Library\\Book.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T21:14:34.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\OOP task Library\\OOP task Library\\Program.cs",
+              "RelativeDocumentMoniker": "OOP task Library\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\OOP task Library\\OOP task Library\\Program.cs",
+              "RelativeToolTip": "OOP task Library\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T21:13:05.425Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
