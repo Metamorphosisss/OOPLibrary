@@ -9,7 +9,7 @@ namespace OOP_task_Library
     public class Library
     {
         public string Name { get; set; }
-        private List<Book> books; //= new List<Book>();
+        private List<Book> books; 
 
         public void DisplayBooks()
         {
@@ -25,9 +25,7 @@ namespace OOP_task_Library
 
         }
         public void AddBook(Book book)
-        {
-            try
-            {
+        {       
                 if (books.Count >= 5)
                 {
                     throw new InvalidOperationException("ERROR --> max value is 5");
@@ -40,27 +38,14 @@ namespace OOP_task_Library
                     }
                 }
                 books.Add(book);
-                Console.WriteLine($"Congratulations! Your book with ID {book.Id} was succesfully added to library");
-            }
-            catch (InvalidOperationException ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Unexpected error: {ex.Message}");
-            }
+                Console.WriteLine($"Congratulations! Your book with ID {book.Id} was succesfully added to library");           
         }
 
-        //Console.WriteLine("ERROR --> max value is 5");
-
-        //Console.WriteLine($"Congratulations! Your book with ID {book.Id} was succesfully added to library");
-
+      
         public void RemoveBook(int id)
         {
-            try
-            {
-                Book bookToRemove = null;
+             Book bookToRemove = null;
+
                 foreach (var book in books)
                 {
                     if (book.Id == id)
@@ -70,6 +55,7 @@ namespace OOP_task_Library
                     }
                 }
 
+
                 if (bookToRemove == null)
                 {
                     throw new ArgumentException($"Your book with ID {id} cannot be found.");
@@ -78,15 +64,8 @@ namespace OOP_task_Library
                 books.Remove(bookToRemove);
                 Console.WriteLine($"Your book with ID {id} was successfully removed from the library.");
             }
-            catch (ArgumentException ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Unexpected error: {ex.Message}");
-            }
-        }
+            
+        
 
 
     }

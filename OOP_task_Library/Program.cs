@@ -25,11 +25,45 @@ catch (InvalidOperationException ex)
 {
     Console.WriteLine($"Error: {ex.Message}");
 }
-
-
+catch (Exception ex)
+{
+    Console.WriteLine($"Unexpected error: {ex.Message}");
+}
 
 library1.DisplayBooks();
+
+try
+{
+    library1.RemoveBook(4);
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine($"Error: {ex.Message}");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Unexpected error: {ex.Message}");
+}
+
+try
+{
+    library1.RemoveBook(52);
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine($"Error: {ex.Message}");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Unexpected error: {ex.Message}");
+}
+
+library1.DisplayBooks();
+
+
+
+/*library1.DisplayBooks();
 
 library1.RemoveBook(4);
 library1.RemoveBook(52); 
-library1.DisplayBooks();
+library1.DisplayBooks();*/
