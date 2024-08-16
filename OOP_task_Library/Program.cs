@@ -60,10 +60,13 @@ catch (Exception ex)
 
 library1.DisplayBooks();
 
+Book foundBook = library1.FindBookById(2);
+if (foundBook != null)
+{
+    Console.WriteLine("Book was succesfully found:");
+    foundBook.Print();
+}
+
+library1.FindBookByAuthor("Jake Guerhter");
 
 
-/*library1.DisplayBooks();
-
-library1.RemoveBook(4);
-library1.RemoveBook(52); 
-library1.DisplayBooks();*/
