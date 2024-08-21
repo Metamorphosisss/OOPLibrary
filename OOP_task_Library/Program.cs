@@ -40,10 +40,6 @@ catch (ArgumentException ex)
 {
     Console.WriteLine($"Error: {ex.Message}");
 }
-catch (Exception ex)
-{
-    Console.WriteLine($"Unexpected error: {ex.Message}");
-}
 
 try
 {
@@ -53,20 +49,31 @@ catch (ArgumentException ex)
 {
     Console.WriteLine($"Error: {ex.Message}");
 }
-catch (Exception ex)
-{
-    Console.WriteLine($"Unexpected error: {ex.Message}");
-}
 
 library1.DisplayBooks();
 
-Book foundBook = library1.FindBookById(2);
-if (foundBook != null)
+try
 {
-    Console.WriteLine("Book was succesfully found:");
+    Book foundBook = library1.FindBookById(2);
+    Console.WriteLine("Book is found (by id):");
     foundBook.Print();
 }
+catch (ArgumentException ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
-library1.FindBookByAuthor("Jake Guerhter");
-
+try
+{
+    library1.FindBookByAuthor("Jake Guerhter");
+    foreach (Book book in library1.FindBookByAuthor("Jake Guerhter")) 
+    {
+        book.Print();
+        Console.WriteLine();
+    }
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine(ex.Message);
+}
 

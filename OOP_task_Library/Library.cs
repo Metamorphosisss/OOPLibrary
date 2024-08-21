@@ -42,69 +42,40 @@ namespace OOP_task_Library
             Console.WriteLine($"Congratulations! Your book with ID {book.Id} was succesfully added to library");
         }
 
-
         public void RemoveBook(int id)
         {
-            Book bookToRemove = null;
+            int removedCount = books.RemoveAll(book => book.Id == id);
 
-            foreach (var book in books)
+            if (removedCount == 0)
             {
-                if (book.Id == id)
-                {
-                    bookToRemove = book;
-                    break;
-                }
+                throw new ArgumentException($"Book with ID {id} was not found");
             }
-
-
-            if (bookToRemove == null)
+            else
             {
-                throw new ArgumentException($"Your book with ID {id} cannot be found.");
+                Console.WriteLine($"Book with ID {id} was removed from library");
             }
-
-            books.Remove(bookToRemove);
-            Console.WriteLine($"Your book with ID {id} was successfully removed from the library.");
         }
 
         public Book FindBookById(int id)
         {
-            foreach (var book in books)
+            var book = books.FirstOrDefault(book => book.Id == id);
+
+            if (book == null)
             {
-                if (book.Id == id)
-                {
-                    return book;
-                }
+                throw new ArgumentException($"Book with ID {id} was not found");
             }
-            return null;
+
+            return book;
         }
-        public void FindBookByAuthor(string author)
+        public List<Book> FindBookByAuthor(string author)
         {
-            List<Book> booksByAuthor = books.FindAll(book => book.Author.Equals(author, StringComparison.OrdinalIgnoreCase));
-
-            /*
-               foreach (var book in books)
+            List<Book> booksByAuthor = books.Where(book => book.Author == author).ToList();
+            if (booksByAuthor.Count == 0)
             {
-                if (book.Author.Equals(author, StringComparison.OrdinalIgnoreCase))
-                {
-                    booksByAuthor.Add(book);
-                }
+                throw new ArgumentException($"Books by {author} were not found");
             }
-            */
-
-            if (booksByAuthor.Count > 0)
-            {
-                Console.WriteLine($"Book by {author}:");
-                foreach (Book book in booksByAuthor)
-                {
-                    book.Print();
-                    Console.WriteLine();
-                }
-            }
-            else
-            {
-                Console.WriteLine($"Any books by {author} cannot be found");
-            }
-        }
+            return booksByAuthor;
+        }       
     }
 }
 
